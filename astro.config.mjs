@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://root-hbx.github.io',
-	base: '/opensat-doc',
+	// base: '/opensat-doc',
 
 	integrations: [
 		starlight({
@@ -21,8 +21,15 @@ export default defineConfig({
 				},
 				{
 					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Reference', slug: 'reference/example' },
+					],
 				},
+				// {
+				// 	label: 'Reference',
+				// 	autogenerate: { directory: 'reference' },
+				// },
 			],
 		}),
 	],
