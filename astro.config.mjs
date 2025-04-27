@@ -14,22 +14,16 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					autogenerate: { directory: 'guides' },
+					// items: [
+					// 	// Each item here is one entry in the navigation menu.
+					// 	{ label: 'Example Guide', slug: 'guides/example' },
+					// ],
 				},
 				{
 					label: 'Reference',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Reference', slug: 'reference/example' },
-					],
+					autogenerate: { directory: 'reference' },
 				},
-				// {
-				// 	label: 'Reference',
-				// 	autogenerate: { directory: 'reference' },
-				// },
 			],
 		}),
 	],
