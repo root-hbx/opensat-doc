@@ -20,10 +20,6 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Doc',
-					autogenerate: { directory: 'doc' },
-				},
-				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
